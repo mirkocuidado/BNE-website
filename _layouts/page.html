@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	{% include head.html %}
+</head>
+<body>
+	{% include nav.html %}
+	<section class="generic-banner relative">
+		<div class="container">
+			<div class="row height align-items-center justify-content-center">
+				<div class="col-lg-10">
+					<div class="generic-banner-content">
+						<h2 class="text-white">{{ page.title }}</h2>
+						<p class="text-white">{{ page.subtitle }}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End banner Area -->
+	<!-- Start Generic Area -->
+	<section class="about-generic-area section-gap">
+		<div class="container border-top-generic">
+			<h3 class="about-title mb-30">Elaboration about Generic Page</h3>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="img-text">
+						<!--<img src="/img/a.jpg" alt="" class="img-fluid float-left mr-20 mb-20">-->
+						{{ content }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Generic Area -->
+	{% include footer.html %}
+</body>
+</html>

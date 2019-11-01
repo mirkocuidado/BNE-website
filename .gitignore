@@ -1,0 +1,8 @@
+.idea/*
+*.iml
+_data/.sass-cache/*
+archives/*
+.sass-cache/*
+_site/*
+php/data/*
+archives/

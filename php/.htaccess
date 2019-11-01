@@ -1,0 +1,17 @@
+# Deny access to everything by default
+Order Deny,Allow
+deny from all
+
+# Allow access to php files
+<Files *.php>
+    allow from all
+</Files>
+
+# Deny access to sub directory
+<Files data/*>
+    deny from all
+</Files>
+
+<Files vendor/*>
+    deny from all
+</Files>

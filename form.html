@@ -1,0 +1,113 @@
+---
+title: "Prijave su otvorene!"
+layout: post
+---
+
+<div class="section-top-border">
+    <div class="row">
+        <div class="col-12">
+            <form enctype="multipart/form-data" action="php/process-form.php" method="post">
+                <div class="input-group-icon mt-10">
+                    <div class="icon"><i class="fa fa-trophy" aria-hidden="true"></i></div>
+                    <div class="form-select" id="competition-select">
+                        <select name="competition" class="nice-select" required="required">
+                            <option value="abb">ABB Robo Challenge </option>
+                            <option value="saga">SAGA Hakaton</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-group-icon mt-10">
+                    <div class="icon"><i class="fa fa-id-card" aria-hidden="true"></i></div>
+                    <input name="name" placeholder="Ime i prezime" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ime i prezime'" required="" class="single-input" type="text">
+                </div>
+                <div class="input-group-icon mt-10">
+                    <div class="icon"><i class="fa fa-envelope " aria-hidden="true"></i></div>
+                    <input name="email" placeholder="E-mail" onfocus="this.placeholder = ''" onblur="this.placeholder = 'E-mail'" required="" class="single-input" type="email">
+                </div>
+                <div class="input-group-icon mt-10">
+                    <div class="icon"><i class="fa fa-phone " aria-hidden="true"></i></div>
+                    <input name="phone" placeholder="Broj telefona: 06X X..." onfocus="this.placeholder = ''" pattern="06[0-9 ]*" title="Broj telefona u obliku: 06X X... " onblur="this.placeholder = 'Broj telefona: 06X X...'" required="" class="single-input" type="text">
+                </div>
+                <div class="input-group-icon mt-10">
+                    <div class="icon"><i class="fa fa-users" aria-hidden="true"></i></div>
+                    <input name="team" placeholder="Ime tima (ostavi prazno ukoliko nemaš tim)" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ime tima (ostavi prazno ukoliko nemaš tim)'" class="single-input" type="text">
+                </div>
+                <div class="input-group-icon mt-10">
+                    <div class="icon">
+                        <i class="fa fa-university" aria-hidden="true"></i>
+                    </div>
+                    <div class="d-flex">
+                        <input name="university" class="multiple-input col-12 col-md-5" placeholder="Fakultet" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Fakultet'" required="" type="text">
+                        <input name="module" class="multiple-input col-12 col-md-4" placeholder="Smer" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Smer'" required="" type="text">
+                        <div class="form-select col-12 col-md-3 multiple-input">
+                            <select name="year" class="nice-select" required="required">
+                                <option value="" selected disabled>Godina</option>
+                                <option value="1">I</option>
+                                <option value="2">II</option>
+                                <option value="3">III</option>
+                                <option value="4">IV</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group-icon mt-10">
+                    <!-- Quick patch as I don't want to udate font-awsome to v5 -->
+                    <div class="icon"><i class="fa fa-shirtsinbulk" aria-hidden="true"></i></div>
+                    <div class="form-select" id="shirt-size">
+                        <select name="shirt-size" class="nice-select" required="required">
+                            <option value="" selected >Veličina majice</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mt-10" id="cover-wrapper">
+                    <textarea maxlength="4095" class="big-textarea" name="cover-letter" placeholder="Motivaciono pismo" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Motivaciono pismo'"></textarea>
+                </div>
+                <div class="mt-10 d-none" id="cv-wrapper">
+                    <div class="input-group mb-3">
+                        <div class="custom-file">
+                            <label class="custom-file-label" for="cv">Izaberi CV fajl (.pdf)</label>
+                            <input type="file" required="required" accept="application/pdf" class="custom-file-input single-input" id="cv" name="cv" aria-describedby="cv-desc">
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-10">
+                    <textarea maxlength="1023" class="single-textarea" name="comments" placeholder="Dodatne informacije (ukoliko nemate laptop, specijalna dijeta itd.)" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Dodatne informacije (ukoliko nemate laptop, specijalna dijeta itd.)'"></textarea>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" required="required" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1"> Saglasan/na sam sa prikupljanjem i obradom ličnih podataka za potrebe projekta Brand New Engineers. </label>
+                  </div>
+                <div class="mt-10">
+                    <input  required="" value="Prosledi" class="single-input genric-btn primary" type="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <br>
+        <div class="col-12 text-muted mt-3">
+            U slučaju problema kontaktirajte <a href="mailto:it@brandnewengineers.rs">it@brandnewengineers.rs</a>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+       var display_proper = function(competition) {
+           var $show = $(competition === 'abb' ? '#cover-wrapper' : '#cv-wrapper');
+           var $hide = $(competition === 'abb' ? '#cv-wrapper' : '#cover-wrapper');
+
+           $show.removeClass('d-none').find('input').attr('required','required');
+           $hide.addClass('d-none').find('input').removeAttr('required');
+       };
+       display_proper($('#competition-select select').find(":selected").attr('value'));
+       $('select').niceSelect(function(){
+            display_proper(this.data('value'));
+       },'competition');
+    });
+</script>

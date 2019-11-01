@@ -1,0 +1,35 @@
+<section class="schedule-area section-gap wow slideInUp" id="raspored">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="menu-content pb-70 col-lg-8">
+                <div class="title text-center">
+                    <h1 class="mb-10">Raspored predavanja - USKORO</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="table-wrap col-lg-12">
+                <table class="schdule-table table table-bordered">
+                    <thead class="thead-light">
+                    <tr>
+                        <th class="head" scope="col">Tema</th>
+                        <th class="head" scope="col">Predavač</th>
+                        <th class="head" scope="col">Sala</th>
+                        <th class="head" scope="col">Vreme</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+{% for lecture in site.data.lectures %}
+                    <tr>
+                        <th class="name" scope="row">{{lecture.subject}}</th>
+                        <td>{{lecture.speaker}}</td>
+                        <td>{{lecture.venue}}</td>
+                        <td>{{lecture.date}}</td>
+                    </tr>
+{% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>

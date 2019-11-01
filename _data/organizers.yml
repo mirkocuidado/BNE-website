@@ -1,0 +1,42 @@
+- name: Mina Milić
+  position: Glavni organizator
+  image: /img/organizatori/mina.jpg
+  links:
+    linkedin: https://www.linkedin.com/in/mina-m-693865a3/
+    mail: minamilic28@gmail.com
+
+- name: Doktor Mirko Krajcer
+  position: IT koordinator
+  image: /img/organizatori/itititit.jpg
+  links:
+    linkedin: https://www.linkedin.com/in/mirko-krajcer-622828192/
+    mail: mirko.krajcer@yahoo.com
+
+
+- name: Dušan Stijović
+  position: Koordinator za logistiku
+  image: /img/organizatori/ducati.jpg
+  links:
+    linkedin: https://www.linkedin.com/in/dusan-stijovic-5874b7154/
+    mail: dusanstijovic598@gmail.com
+
+- name: Sofija Ilić
+  position: Koordinator za odnose sa kompanijama
+  image: /img/organizatori/frfrfr.jpg
+  links:
+    linkedin: http://linkedin.com/in/sofijailic
+    mail: sofija@sdlink.co.rs
+
+- name: Emilija Marjanović
+  position: Koordinator za odnose sa javnošću
+  image: /img/organizatori/publik.jpg
+  links:
+    linkedin: https://www.linkedin.com/in/emilija-marjanović-ab91a4195/
+    mail: emilija.marjanovic.98@gmail.com
+
+- name: Anđela Veličković
+  position: Koordinator za publikacije
+  image: /img/organizatori/dizajn.jpg
+  links:
+    linkedin: #
+    mail: andjvel@gmail.com

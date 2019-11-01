@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    {% include head.html %}
+</head>
+<body>
+{% include nav.html %}
+{%- for module in page.modules -%}
+{% include home/{{module}}.html %}
+{%- endfor -%}
+{% include footer.html %}
+<script type="text/javascript" src="/js/home.js"></script>
+</body>
+</html>
+
+
+

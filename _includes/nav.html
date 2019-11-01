@@ -1,0 +1,42 @@
+<header id="header">
+    <div class="container fadeIn animated-onload delay-05s">
+        <div class="row align-items-center justify-content-around d-flex">
+            <nav class="nav-menu-container">
+                <ul class="nav-menu">
+                {% if page.url == site.baseurl %}
+                    <li class="header-border"><a href="#seminar">Konferencija</a></li>
+                    <li class="header-border"><a href="#hakaton">Hakaton</a></li>
+                    <li class="header-border"><a href="#raspored">Raspored</a></li>
+                    <li class="menu-has-children header-border"><a href="#novosti">Novosti</a>
+                        <ul>
+                        {% for post in site.posts limit:5%}
+                            <li><a href="{{ post.url | relative_url}}">{{ post.title }}</a></li>
+                        {% endfor %}
+                           
+                        </ul>
+                    </li>
+                {% else %}
+                    <li class="header-border"><a href="{{'/index.html' | relative_url}}">Naslovna</a></li>
+                {% endif %}
+                </ul>
+            </nav>
+            <nav class="nav-menu-container">
+                <ul class="nav-menu">
+                    <li class="menu-has-children header-border"><a href="#">Arhiva</a>
+                        <ul>
+                            <li><a href="{{'/archives/2017/index.html'}}">2017</a></li>
+                            <li><a href="{{'/archives/2018/index.html'}}">2018</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-has-children header-border"><a href="#">O nama</a>
+                        <ul>
+                            <li><a href="{{'/organizatori.html' | relative_url}}">Organizatori</a></li>
+                            <li><a href="{{'/kompanije.html' | relative_url}}">Kompanije</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="ticker-btn" href="{{'/form.html' | relative_url}}">Prijavi se</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,26 @@
+<section class="home-slider-area" id="seminar">
+	<div class="container-fluid">
+		<div class="row justify-content-end align-items-center">
+			<div class="col-lg-4 no-padding about-right wow slideInLeft">
+				<p class="top-title">Unapredi svoje veštine</p>
+				<h1>BNE: Konferencija</h1>
+				<p>
+					Konferencija za studente će se održati u Zgradi tehničkih fakulteta u Beogradu. U okviru jednočasovnih predavanja, koja će biti u periodu od 12. do 13. novembra, studenti će imati priliku da se upoznaju sa aktuelnim temama iz oblasti inženjeringa, veštačke inteligencije i informacionih tehnologija. Ulaz je slobodan za sve zainteresovane!
+				</p>
+			</div>
+			<section class="slider-area col-lg-6 no-padding wow slideInRight">
+				<div class="overlay overlay-bg"></div>
+				<div class="containers">
+					<div id="seminar-carusel">
+{% assign images = site.static_files | where: "image", true %}
+{% for image in images %}{% if image.path contains 'seminar' %}
+						<div class="item video-right justify-content-center align-items-center d-flex">
+							<img src="{{image.path | relative_url }}" alt="">
+						</div>
+{% endif %}{% endfor %}
+					</div>
+				</div>
+			</section>											
+		</div>
+	</div>	
+</section>

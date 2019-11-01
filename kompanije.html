@@ -1,0 +1,92 @@
+---
+title: "Pokrovitelji projekta"
+layout: post
+---
+
+{% assign generalni = site.data.companies | where: "type", "generalni" %}
+{% assign godisnji = site.data.companies | where: "type", "godisnji" %}
+{% assign robni = site.data.companies | where: "type", "robni" %}
+{% assign edukativni = site.data.companies | where: "type", "edukativni" %}
+
+{% for company in generalni %}
+{% assign mod = forloop.index | modulo: 2 %}
+
+{% if mod == 0 %}
+<div class="section-top-border">
+    <div class="row text-right" style="position:relative">
+        <div class="col-md-3 text-left">
+            <a href="{{company.link}}" target="_blank"><img src="{{company.image | relative_url}}" alt="{{company.name}}" class="img-fluid"></a>
+        </div>
+        <div class="col-md-9 text-justify readmore">
+            {{company.description | markdownify}}
+        </div>
+    </div>
+</div>
+{% else %}
+<div class="section-top-border">
+    <div class="row text-left" style="position:relative">
+        <div class="col-md-9 text-justify readmore">
+            {{company.description | markdownify}}
+        </div>
+        <div class="col-md-3 text-right">
+            <a href="{{company.link}}" target="_blank"><img src="{{company.image | relative_url}}" alt="{{company.name}}" class="img-fluid"></a>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endfor %}
+
+
+
+<h1 class="about-title mt-60 mb-30 text-center">Sponzori projekta</h1>
+<div class="section-top-border d-flex flex-wrap justify-content-around">
+    {% for company in robni %}
+    <a target="_blank" class="company-card" href="{{company.link}}"><img class="img-fluid" src="{{company.image | relative_url}}" alt="{{company.name}}" title="{{company.name}}"></a>
+    {% endfor %}
+</div>
+
+<h1 class="about-title mt-60 mb-30 text-center">Godišnji pokrovitelji</h1>
+<div class="section-top-border d-flex flex-wrap justify-content-around">
+    {% for company in godisnji %}
+    <a target="_blank" class="company-card" href="{{company.link}}"><img class="img-fluid" src="{{company.image | relative_url}}" alt="{{company.name}}" title="{{company.name}}"></a>
+    {% endfor %}
+</div>
+
+<h1 class="about-title mt-60 mb-30 text-center">Edukativni pokrovitelji</h1>
+<div class="section-top-border d-flex flex-wrap justify-content-around">
+    {% for company in edukativni %}
+    <a target="_blank" class="company-card" href="{{company.link}}"><img class="img-fluid" src="{{company.image | relative_url}}" alt="{{company.name}}" title="{{company.name}}"></a>
+    {% endfor %}
+</div>
+
+<style>
+    .lnk{
+        position: absolute;
+        bottom: -50px;
+        padding: 0 15px;
+    }
+    .company-card{
+        width: 18rem;
+        display:inline-block;
+        margin:20px;
+        border:0;
+    }
+    .company-card img{
+        vertical-align: middle;
+    }
+    .company-card .helper{
+        display:inline-block;
+        height:100%;
+        vertical-align: middle;
+    }
+</style>
+<script src="js/libs/readmore.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.readmore').readmore({
+            moreLink: '<span class="lnk"><a href="#">Pročitaj više</a></span>',
+            lessLink: '<span class="lnk"><a href="#">Sakrij</a></span>'
+        });
+        $('.company-card').prepend('<span class="helper"></span>');
+    });
+</script>

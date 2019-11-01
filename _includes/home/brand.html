@@ -1,0 +1,18 @@
+{% assign main_companies = site.data.companies | where: "type", "generalni" %}
+<section class="brand-area section-gap wow slideInUp">
+	<div class="container">
+		<div class="row logo-wrap">
+			<a target="_blank" class="col single-img" href="https://www.etf.bg.ac.rs/">
+				<img class="d-block mx-auto" src="img/etf.png" alt="etf">
+			</a>
+			<a target="_blank" class="col single-img" href="https://eestec.net/">
+				<img class="d-block mx-auto" src="img/eestec.png" alt="eestec">
+			</a>
+			{% for company in main_companies %}
+			<a target="_blank" class="col single-img" href="{{company.link}}">
+				<img class="d-block mx-auto" src="{{company.image | relative_url}}" alt="{{company.name}}">
+			</a>
+			{% endfor %}
+		</div>
+	</div>
+</section>

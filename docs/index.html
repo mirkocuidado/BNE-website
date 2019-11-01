@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>BNE: Docs</title>
+        <meta name="description" content="">
+		<!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- <link rel="shortcut icon" href="img/favicon.png"> -->
+        
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet'>
+        
+        <!-- Syntax Highlighter -->
+        <link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shCore.css" media="all">
+        <link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shThemeDefault.css" media="all">
+		
+		<!-- Font Awesome CSS-->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <!-- Normalize/Reset CSS-->
+		<link rel="stylesheet" href="css/normalize.min.css">
+		<!-- Main CSS-->
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <aside class="left-sidebar">
+            <div class="logo">
+                <a href="#welcome">
+                    <img style="width:100%" src="img/logo.png" alt="">
+                </a>
+            </div>
+            <nav class="left-nav">
+                <ul id="nav">
+                    <li class="current"><a href="#welcome">Uvod</a></li>
+                    <li><a href="#installation">Instalacija</a></li>
+                    <li><a href="#structure">Struktura</a></li>
+                </ul>
+            </nav>
+        </aside>
+		
+		<div id="main-wrapper">
+		    <div class="main-content">
+		        <section id="welcome">
+		            <div class="content-header">
+		                <h1>BNE: Dokumentacija</h1>
+		            </div>
+		            <div class="welcome"> 
+                        <h2 class="twenty">Dobrodošli na zvaničnu dokumentaciju BNE projekta</h2>
+                        <p class="fifteen">Učestali problem istekovih projekata jeste upravo KT. Neretko se gomila stvari radi iznova jer je prethodna baza postala neupotrebljiva ili jednostavno postoji želja za svežim startom. Često je i velika frka s vremenom, pa se i nema vremena za pisanje bilo kakve dokumentacije što direktno utiče na volju narednog koordinatora da sve to održava
+                        <p  class="fifteen">Cilj ove dokumentacija jeste da na što lakši način uputi u delovanje prethodnog BNE-a sa tehničkog aspekta. Nastojao sam da omogućim laku administraciju, kako bi ponovna upotreba i utilizacija koda bila maksimalna. Toplo ohrabrujem svaki poduhvat izmene koda ili čak pisanje kompletno novog ukoliko za to postoji volja. Moj je savet da se postojoća kodna baza nadograđuje, jer to umnogome olakšava održavanje i štedi nas vremena pisanja nove dokumentacije. Za bilo kakva dodatna pitanja šibnite slobodno mejl na <code><a href="mailto:aleksa.d.ilic@gmail.com">aleksa.d.ilic@gmail.com</a></code>
+                        <p>Držim palčeve i nadam se da će BNE biti još bolji ove godine! Srećno</p>
+		            </div>    
+		            <div class="features">
+		                <h2 class="twenty">Korišćene tehnologije i karakteristike</h2>
+		                <ul>
+		                    <li>Jekyll platforma za generisanje statičkih blog-ready sajtova</li>
+		                     <li style="list-style-type:none">
+		                     	<ul>
+		                     		<li>Propratni administratorski panel plugin za laku upotrebu</li>
+		                     		<li>SEO/sitemap plugin, kako bi sajt bio adekvatno indeksiran od strane pretraživača</li>
+		                       </ul>
+		                    </li>
+                            <li>Modularan kod</li>
+                            <li>Responzivan dizajn</li>
+                            <li>HTML5 • CSS3</li>
+                            <li>Kompatibilan sa svim modernim web pretraživačima</li>
+                            <li>Dokumentovan kod</li>
+		                </ul>
+		                <p class="fifteen">Jekyll platforma je izabrana jer omogućava laku migraciju koda usled serverske nezavisnosti. Generisani kod je statički, izuzev PHP skripte koja obrađuje formu, te nikakvo dodatno podešavanje baza ili ažuriranje nekog back-enda nije neophodno, što umnogome olakšava administraciju i prenošenje projekta iz godine u godinu.
+		                <p class="fifteen">Jedina nelagodnost koja iz ovoga proizilazi jeste neophodnost da se pri svakoj novoj izmeni sadržaka, eksplicitnim pozivom kod ponovo generiše i potom otpremi ka serveru. Kako je taj proces već dovoljno lak i automatizovan, smatram da je to mala cena za pogodnosti koje platforma pruža.
+		                <p class="fifteen">Dokumentacija same platforme je vrlo pristupačna i jako brzo se kroz nju može proći. Naravno, za potrebe bazične administracije sajta nije neophodno kroz to prolaziti jer administratorski panel pokriva sve što je neophodno, već je dovoljno samo znati gorepomenute komande za otpremanje koda i početnu inicijalizaciju.
+		                <p>Korisni linkovi: <a href="https://jekyllrb.com/docs/">https://jekyllrb.com/docs/</a>, <a href="https://devhints.io/jekyll">https://devhints.io/jekyll</a>
+		            </div>
+		        </section>
+		        <section id="installation">
+                    <div class="content-header">
+		                <h1>Instalacija i podešavanje okruženja</h1>
+                    </div>
+                    <h2 class="title">Preduslovi</h2>
+                    <div class="section-content">
+                    	<p class="fifteen">Neophodno je na dev računaru instalirati <b>git</b> i razvojno okruženje po svom izboru. Moja preporuka je <b>InteliJ IDEA</b> ili bilo koja njena ogoljena verzija (PHPStorm, WebStorm) jer je jedno sveobuhvatno rešenje, a i već je spremna gotova konfiguracija pošto sam to koristio. Studentska licenca je besplatna samo im šibni mejl sa studentskog naloga.
+                    	<p class="fifteen">Ukoliko nisi prethodno koristio git, savetujem da to naučiš jer umnogome olakšava razvojni proces dođe ti ko neki history tool. Komandna linija može biti zamorna i izvor dodatnih nedaća, pa je zgodno koristiti grafički alat kao što je <b>GitKraken</b>
+                    	<p class="fifteen">Takođe nephodno je instalirati <b>Ruby</b> klijent, jer to <b>jekyll</b> interno koristi. To je na adresi <a href="https://www.ruby-lang.org/en/documentation/installation/#rubyinstaller">https://www.ruby-lang.org/en/documentation/installation/#rubyinstaller</a>, ako si na windowsu. Bez brige, kod nije pisan u tom jeziku ;) 
+                    </div>
+                	<h2 class="title">Instalacija</h2>
+                    <div class="section-content">
+                    	<ol>
+                    		<li>Sada kada je <b>ruby</b> instaliran možeš instalirati <b>jekyll</b> komandom <code> gem install bundler jekyll</code>
+                    		<li>Kod možeš preuzeti u aktivan direktorijum naredbom <code>git clone https://github.com/aleksailic/bne</code>
+                    		<li>Predji u novokreirani bne direktorijum i pokreni naredbu <code>bundle install</code> kako bi se instalirali ostali preduslovi
+                    		<li>Uvezi bne dir u razvojno okruženje i možeš početi sa radom :)
+                    		<li>Za aktivan pregled izmena koristi komandu <code>bundle exec jekyll serve</code>, sajt će se automatski i dinamički generisati i biti serviran lokalno na adresi <code>http://localhost:4000</code>
+                    		<li>Nakon što je jekyll "serviran" možeš otići na administracioni panel koji je na adresi <code>http://localhost:4000/admin</code>	
+                    	</ol>
+                    </div>  
+		        </section>
+		        <section id="structure">
+		            <div class="content-header">
+		                <h1>Struktura projekta</h1>
+                    </div>
+<pre>
+./
+├── _data/
+│   └── ... #lako izmenljivi podaci o kompanijama/organizatorima itd...
+├── _includes/
+│   ├── home/
+│   │   └── ... #implementacija modula gl. stranice
+│   └── ... #implementacija interstraničnih parcijala
+├── _layouts/
+│   └── ... #šabloni prema kojima se stranice generišu
+├── _posts/
+│   ├── 2018-10-16-najava.md  #primer jednog blog posta
+│   └── ... #obrati paznju na imenovanje, bitno je
+├── _sass/ #malo pametniji css, lako za naučiti
+│   ├── bootstrap/
+│   │ 	└── ... #vendor kod bootstrap-a, ne dirati
+│   └── theme/
+│    	└── ... #sass kod teme, dirati
+├── _site/ 
+│   └── ... #automatski generisan kod!!
+├── archives/  
+│   └── ... #ovaj folder ručno prekopirati na server, nije deo aktivne generacije zbog performansi
+├── css/  
+│   └── ... #vendor kodovi biblioteka i helper fajlovi za generaciju, ne dirati
+├── docs/  
+│   └── ... 
+├── fonts/  
+│   └── ... 
+├── img/  
+│   ├── elements/ 
+│   │ 	└── ... #fensi form elementi
+│   ├── hakaton/
+│   │ 	└── ... #idu u slajder automatski bez dodatne konfiguracije!
+│   ├── seminar/
+│   │ 	└── ... #idu u slajder automatski bez dodatne konfiguracije!
+│   ├── organizatori/
+│   │   ├── bahami/ 
+│   │ 	│   └── ... #easter-egg
+│   │ 	└── ... #pogledaj u data direktorijumu fajl o organizatorima
+│   ├── kompanije/
+│   │ 	└── ... #pogledaj u data direktorijumu fajl o kompanijama
+│   └── ... #ostalo, jasno iz naziva
+├── js/  
+│   ├── main.js #na svakoj stranici
+│   ├── home.js #samo na glavnoj
+│   └── ... #biblioteke, ne dirati
+├── php/  
+│   ├── data/ 
+│   │ 	└── ... #ovde će biti trpani cv fajlovi i csv "baza"
+│   ├── process-form.php #glavna skripta za dinamičko procesuiranje forme
+│   └── ... #composer fajlovi za dovlačenje biblioteke, nebitno
+│
+├── index.md #generator početne stranice, u ovom fajlu vrši se izbor aktivnih modula
+├── kompanije.html #podatke menjati preko propratnog data fajla
+├── organizatori.html #podatke menjati preko propratnog data fajla
+├── form.html #ovde menjati sadržaj forme
+├── _config.yml #glavni konfiguracioni fajl jekylla
+└── ...
+
+</pre>
+		        </section>
+
+
+		        <section id="css-structure">
+		            <h2 class="title">CSS Files and Structure</h2>
+		            <p class="fifteen">These are the css files that are loaded into templates in <strong>Head Section</strong>.</p>
+		            <pre class="brush: html">
+		                <!--
+						CSS
+						============================================= -->
+						<link rel="stylesheet" href="css/linearicons.css">
+						<link rel="stylesheet" href="css/owl.carousel.css">
+						<link rel="stylesheet" href="css/font-awesome.min.css">
+						<link rel="stylesheet" href="css/nice-select.css">
+						<link rel="stylesheet" href="css/magnific-popup.css">
+						<link rel="stylesheet" href="css/bootstrap.css">
+						<link rel="stylesheet" href="css/main.css">
+					</pre>
+		            
+		            <h2 class="title">Google Web Fonts</h2>
+		            
+		            <p>By default, the template loads this font from Google Web Font Services, you can change the font with the one that suits you best.</p>
+		            
+		            <pre class="brush:html">		                
+						<!--
+						Google Font
+						=========================== -->
+		                <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600" rel="stylesheet"> 
+		            </pre>
+		            
+		            <p class="twenty">Remember to change the font into <strong>main.css</strong></p>
+		        </section>
+		        
+		        <section id="javascript">
+		            <h2 class="title">Javascript Files and Structure</h2>
+		            
+		            <p class="fifteen">These are the list of Javascript files that are loaded into templates in end of the <strong>Body Section</strong>.
+		            
+		            <pre class="brush: html">
+				        <!--
+						JavaScripts
+						========================== -->
+						<script src="js/vendor/jquery-2.2.4.min.js"></script>
+						<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+						<script src="js/vendor/bootstrap.min.js"></script>
+						<script src="js/jquery.ajaxchimp.min.js"></script>
+						<script src="js/owl.carousel.min.js"></script>
+						<script src="js/jquery.nice-select.min.js"></script>
+						<script src="js/jquery.magnific-popup.min.js"></script>
+						<script src="js/main.js"></script>
+		            </pre>
+		        </section>
+		        
+		        <section id="contact-form">
+		            <h2 class="title"> Contact Form </h2>
+		            <p>This is a PHP Script for sending messages to your email, you should replace <strong>support@pixelcoder.net</strong> to your email to start receive messages.</p>
+		            <pre class="brush:php">
+	                    $to = 'demo@spondonit.com'; // replace this mail with yours
+					    $firstname = $_POST["fname"];
+					    $email= $_POST["email"];
+					    $headers = 'MIME-Version: 1.0' . "\r\n";
+					    $headers .= "From: " . $email . "\r\n"; // Sender's E-mail
+					    $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+					    $message ='<table style="width:100%">
+					        <tr>
+					            <td>'.$firstname.'  '.$laststname.'</td>
+					        </tr>
+					        <tr><td>Email: '.$email.'</td></tr>
+					    </table>';
+
+					    if (@mail($to, $email, $message, $headers))
+					    {
+					        echo 'The message has been sent.';
+					    }else{
+					        echo 'failed';
+					    }
+		            </pre>		            
+		        </section>
+		        <section id="subscription-form">
+		            <h2 class="title"> Subscription Form </h2>
+		            <p>Replace this action with your own mailchimp post URL. Don't remove the "". Just paste the url inside "".</p>
+		            <pre class="brush: javascript">
+				        <div id="mc_embed_signup">
+				        	//Replace this action with your own mailchimp post URL. Don't remove the "". Just paste the url inside "".
+				        	<form target="_blank" novalidate action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&id=92a4423d01" method="get" class="subscription relative d-flex justify-content-center"></form>
+				        </div>
+		            </pre>		            
+		        </section>
+		        <section id="video">
+		        	<h2 class="title"> Video Tutorial </h2>
+		        	<!-- 21:9 aspect ratio -->
+					<div class="embed-responsive embed-responsive-21by9">
+					  <iframe class="embed-responsive-item" width="100%" height="515" src="https://www.youtube.com/embed/i7_PRPLOxVE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+					</div>	            
+		        </section>
+		        <section id="credit">
+		            <h2 class="title">Source and Credit</h2>		            
+		            <div class="script-source">
+		                <ul>
+		                    <li><a target="_blank" href="http://www.pexels.com">Pexels</a></li>
+		                    <li><a target="_blank" href="http://jquery.com/">jQuery</a></li>
+		                    <li><a target="_blank" href="http://getbootstrap.com">Bootstrap Framework</a></li>
+		                    <li><a target="_blank" href="http://www.owlgraphic.com/owlcarousel">Owl Carousel</a></li>
+		                    <li><a target="_blank" href="https://github.com/iamMonzurul/jQuery-AJAX-MailChimp">Ajax Mailchimp</a></li>
+		                    <li><a target="_blank" href="http://fontawesome.io/">FontAwesome</a></li>
+		                    <li><a target="_blank" href="http://dimsemenov.com/plugins/magnific-popup/">Magnefic Pop Up</a></li>
+		                    <li><a target="_blank" href="http://hernansartorio.com/jquery-nice-select/">Nice Select</a></li>
+		                    <li><a target="_blank" href="https://linearicons.com/">Linear Icons</a></li>
+		                </ul>
+		            </div>
+		        </section>
+		    </div>
+		</div>
+		
+		
+		<!-- Essential JavaScript Libraries
+		==============================================-->
+        <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="js/jquery.nav.js"></script>
+        <script type="text/javascript" src="syntax-highlighter/scripts/shCore.js"></script> 
+        <script type="text/javascript" src="syntax-highlighter/scripts/shBrushXml.js"></script> 
+        <script type="text/javascript" src="syntax-highlighter/scripts/shBrushCss.js"></script> 
+        <script type="text/javascript" src="syntax-highlighter/scripts/shBrushJScript.js"></script> 
+        <script type="text/javascript" src="syntax-highlighter/scripts/shBrushPhp.js"></script> 
+        <script type="text/javascript">
+            SyntaxHighlighter.all()
+        </script>
+        <script type="text/javascript" src="js/custom.js"></script>
+		
+    </body>
+</html>

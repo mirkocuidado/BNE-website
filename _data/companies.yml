@@ -1,0 +1,62 @@
+- name: ABB
+  link: https://abb.com
+  image: /img/kompanije/abb.png
+  type: generalni
+  description: |
+    ABB je tehnološki lider koji predvodi digitalizaciju industrije. Uz nasleđe od preko 130 godina inovacija, ABB danas čine četiri globalna poslovna sektora usmerena ka kupcu: Elektroenergetska oprema, Industrijska automatizacija, Robotika i Elektromotorni pogoni, koji su podržani zajedničkom ABB Ability™ digitalnom platformom. ABB-ov poslovni sektor Elektroenergetske mreže biće prodat kompaniji Hitači u 2020. godini. ABB posluje u više od 100 zemalja i zapošljava oko 147.000 ljudi. [www.abb.com](http://www.abb.com)
+
+    ABB u Srbiji, osnovan 1990. godine, deo je ABB Grupe i kao jedna od vodećih kompanija u oblasti industrijskih tehnologija pomaže kupcima u unapređenju korišćenja električne energije, povećanju industrijske produktivnosti i smanjenju negativnog uticaja na okolinu. ABB d.o.o. sa sedištem u Beogradu nadležan je za celokupan asortiman ABB-ovih proizvoda i sistema na teritoriji Republike Srbije. Zahvaljući svojoj strukturnoj organizaciji koju čine četiri divizije organizovane u odnosu na industrije kojima služe, ABB d.o.o. ima razvijenu saradnju sa lokalnim partnerima i kupcima, zadužen je za puštanje u rad, servis i održavanje ABB-ove opreme i sistema, kao i adekvatnu obuku korisnika. [www.abb.com](http://www.abb.com)
+
+- name: SAGA
+  link: http://www.saga.rs
+  image: /img/kompanije/saga.png
+  type: generalni
+  description: |
+   Saga je IT kompanija koja već 30. godina pomaže svojim klijentima, firmama i preduzećima da se digitalno transformišu. Saga pruža svojim klijentima sve što je sa aspekta informacionih tehnologija neophodno da bi prešli na digitalne modele poslovanja. To znači da obezbeđuje kompletnu IT infrastrukturu, instalira i konfiguriše opremu, implementira gotove informacione sisteme, ali i  kreira softverske proizvode od nule koje koriste naši klijenti u zemlji i inostranstvu. Na ovaj način zaposleni u Sagi prolaze kroz ceo ciklus razvoja softvera, počev od prodaje, preko analize korisničkih zahteva i razvoja do implementacije, obuke korisnika i nakon toga održavanje. Ovakvim pristupom zaposlenima je omogućeno da prate životni ciklus proizvoda i njegova stalna unapređenja. 
+   
+   Zahvaljujući ekspertizi naših zaposlenih, bliskoj saradnji sa klijentima i upotrebi najnovijih tehnoloških dostignuća već godinama implementiramo rešenja koja transformišu poslovanje, prave razliku i omogućavaju Sagi da bude vodeći sistem-integrator u Regionu. Od 2009. godine Saga je postala deo New Frontier Group – najperspektivnije grupacije ICT preduzeća u Centralnoj i Istočnoj Evropi koja se 2013. godine našla na Gartnerovoj listi 10 najuspešnijih sistem-integratora na ovim tržištima. [www.saga.rs](http://www.saga.rs)
+
+- name: Microsoft Develeopment Center Serbia
+  link: https://www.microsoft.com/sr-latn-rs/mdcs/
+  image: /img/kompanije/mdcs.jpg
+  type: godisnji
+
+- name: Elektrotehnički fakultet
+  link: https://www.etf.bg.ac.rs/
+  image: /img/kompanije/etf.png
+  type: edukativni
+
+- name: Mainstream
+  link: http://www.mainstream.rs/
+  image: /img/kompanije/mainstream.png
+  type: edukativni
+
+- name: StartIT
+  link: https://startit.rs/
+  image: /img/kompanije/startit.png
+  type: godisnji
+
+- name: Endava
+  link: https://www.endava.com/
+  image: /img/kompanije/endava.png
+  type: godisnji
+
+- name: Skoltech
+  link: https://www.skoltech.ru/en
+  image: /img/kompanije/skoltech.png
+  type: godisnji
+
+- name: Teletrader
+  link: http://www.teletrader.rs/
+  image: /img/kompanije/teletrader.jpg
+  type: godisnji
+
+- name: Kopirnica Leptirić
+  link: https://kopiranje.rs/
+  image: /img/kompanije/leptir.jpg
+  type: robni
+
+- name: Ferdinand knedle
+  link: https://www.donesi.com/beograd/en/ferdinandknedle-dostava-1668.php
+  image: /img/kompanije/ferd.jpg
+  type: robni

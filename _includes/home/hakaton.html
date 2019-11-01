@@ -1,0 +1,24 @@
+<section class="home-slider-area wow slideInUp" id="hakaton">
+	<div class="container-fluid">
+		<div class="row align-items-center">
+			<div class="col-lg-7 no-padding about-left">
+				<div id="hakaton-carusel">
+{% assign images = site.static_files | where: "image", true %}
+{% for image in images %}{% if image.path contains 'hakaton' %}
+					<div class="item justify-content-center align-items-center d-flex">
+						<img src="{{image.path | relative_url}}" alt="">
+					</div>
+{% endif %}{% endfor %}
+				</div>
+			</div>
+			<div class="col-lg-5 about-right">
+				<p class="top-title">Pokaži svoje veštine</p>
+				<h1 class="text-white">BNE: Hakaton</h1>
+				<!--<p><span>We are here to listen from you deliver exellence</span></p>-->
+				<p>
+					Ove godine BNE konferencija ima 2 prateća takmičenja. 24-časovni hakaton i takmičenje iz robotike!
+				</p>
+			</div>
+		</div>
+	</div>	
+</section>

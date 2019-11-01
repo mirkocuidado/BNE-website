@@ -1,0 +1,32 @@
+<section class="schedule-area wow slideInLeft" id="novosti">
+    <div class="container">
+        <div class="title text-center">
+            <br>
+            <h1 class="mb-10">Novosti</h1>
+            <br>
+        </div>
+        <div class="row">
+            <div id="novosti-carusel" class="owl-carousel">
+            {% for post in site.posts %}
+            <div class="card item">
+                <div class="card-body">
+                    <div class="clearfix">
+                        <h5 class="card-title float-left">{{ post.title }}</h5>
+                        <p class="card-subtitle text-muted float-right">{{ post.date | date_to_string }}</p>
+                    </div>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ post.subtitle }}</h6>
+                    <p class="card-text">
+                        {{ post.excerpt | markdownify |  strip_html | truncatewords:20}}
+                    </p>
+                </div>
+                <div class="card-footer d-flex d-flex justify-content-between">
+                    <div><a href="{{ post.url | relative_url }}" class="card-link">Pročitaj više</a></div>
+                    <div class="card-subtitle text-muted">{{post.author}}</div>
+
+                </div>
+            </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
