@@ -51,6 +51,11 @@
   image: /img/kompanije/teletrader.jpg
   type: godisnji
 
+- name: Knjaz Miloš
+  link: https://knjaz.rs/
+  image: /img/kompanije/knjazz.jpg
+  type: godisnji
+
 - name: Kopirnica Leptirić
   link: https://kopiranje.rs/
   image: /img/kompanije/leptir.jpg
