@@ -1,4 +1,39 @@
-- subject:
-  speaker:
-  date:
-  venue:
+- subject: Primena digitalnih tehnologija u procesu pregovaranja i odlučivanja
+  speaker: prof. dr Slobodan Vukosavić
+  date: Nov 12, 10:00 AM - 11:00 AM
+  venue: Svečana sala Arhitektonskog fakulteta
+
+- subject: Elektronska energetika
+  speaker: prof. dr Slobodan Vukosavić
+  date: Nov 12, 11:00 AM - 12:00 AM
+  venue: Svečana sala Arhitektonskog fakulteta
+
+- subject: Biosignali za procenu sajber mučnine
+  speaker: doc. dr Nadica Miljković
+  date: Nov 12, 12:00 AM - 01:00 PM
+  venue: Svečana sala Arhitektonskog fakulteta
+
+- subject: Elektronika i nove tehnologije
+  speaker: prof. dr Nenad Jovičić
+  date: Nov 12, 01:00 PM - 02:00 PM
+  venue: Svečana sala Arhitektonskog fakulteta
+
+- subject: Razvoj mobilnih aplikacija za pronalaženje koordinata osoba u zatvorenom prostoru koristeći veštačku inteligenciju
+  speaker: prof. dr Zaharije Radivojević
+  date: Nov 13, 10:00 AM - 11:00 AM
+  venue: Svečana sala Arhitektonskog fakulteta
+
+- subject: Pametni zvučnici i mikrofoni
+  speaker: as. dr Miloš Bjelić
+  date: Nov 13, 11:00 AM - 12:00 AM
+  venue: Svečana sala Arhitektonskog fakulteta
+
+- subject: Veštačka inteligencija - istorija, njena sadašnjost i budućnost
+  speaker: doc. dr Predrag Tadić
+  date: Nov 13, 12:00 AM - 01:00 PM
+  venue: Svečana sala Arhitektonskog fakulteta
+
+- subject: Inženjering u službi finansijama, data science kao pokretać novog koncepta kroz analizu realne primene
+  speaker: Milen Janjić, kompanija SAGA
+  date: Nov 13, 01:00 PM - 02:00 PM
+  venue: Svečana sala Arhitektonskog fakulteta
