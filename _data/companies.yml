@@ -56,6 +56,11 @@
   image: /img/kompanije/knjazz.jpg
   type: godisnji
 
+- name: FlixBus
+  link: https://global.flixbus.com/?wt_mc=acq.com.FlixBus.sea-brand.google.3799800904.225693625_15920506345.ad&wt_cc1=branded&wt_cc5=flixbus&gclid=CjwKCAiAwZTuBRAYEiwAcr67OaW7vVshyqZUZm_JyV0wJ3bDaRbJ2N6sxaKEFSHvRwihKNe9mGzalBoCNXsQAvD_BwE
+  image: /img/kompanije/flix.jpg
+  type: godisnji
+
 - name: Kopirnica Leptirić
   link: https://kopiranje.rs/
   image: /img/kompanije/leptir.jpg
@@ -64,4 +69,24 @@
 - name: Ferdinand knedle
   link: https://www.donesi.com/beograd/en/ferdinandknedle-dostava-1668.php
   image: /img/kompanije/ferd.jpg
+  type: robni
+
+- name: Beleške
+  link: https://beleske.com/
+  image: /img/kompanije/beleske.jpg
+  type: robni
+
+- name: Hello World
+  link: https://www.helloworld.rs/oglasi-za-posao/?gclid=CjwKCAiAqqTuBRBAEiwA7B66ha5wkzqRUcleimMFY23IiP2Vtq9w60u1CqMo4n6ThWOqm8XTj9UushoC-NoQAvD_BwE
+  image: /img/kompanije/images.jpg
+  type: robni
+
+- name: Svet nauke
+  link: https://www.svetnauke.org/
+  image: /img/kompanije/svetnauke.jpg
+  type: robni
+
+- name: Urban Bug
+  link: http://www.urbanbug.net/
+  image: /img/kompanije/urbanbug.jpg
   type: robni
